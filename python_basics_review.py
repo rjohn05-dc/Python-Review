@@ -30,6 +30,7 @@ print(res6)
 
 
 # 3 Concatenation
+
 # Ask the user for their first and last name
 first_name = input("Enter your first name: ")
 last_name = input("Enter your last name: ")
@@ -50,4 +51,22 @@ modified_name = full_name + favorite_number
 print(f"Your modified name: {modified_name}")
 
 
-# 4 Function
+# 4. Functions
+# define the function
+def greet_user(name):
+    return "Hello " + name
+
+# define the function
+def calculate_area(length, width):
+    length=int(input("Enter a length"))
+    width=int(input("Enter a width"))
+    print( "Area of the rectangle " + str(length*width))
+    
+# define the function
+def convert_to_celsius(fahrenheit):
+    temperature=(fahrenheit - 32) * 5/9
+    return temperature
+
+print(greet_user("Rohan"))
+print(calculate_area(3,4))
+print(convert_to_celsius(45))
